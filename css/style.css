@@ -1,0 +1,214 @@
+#main-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  padding: 3rem;
+  width: fit-content;
+  background-color: #f8e5d7;
+  border: #000 solid 0.1rem;
+  font-weight: 500;
+}
+#main-contact .contact-container .contact-h2 {
+  font-size: 5rem;
+  margin: 0 0 1rem;
+}
+#main-contact .contact-container .contact-h3 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 4.625rem;
+}
+
+#main-grid {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: auto;
+  grid-template-rows: calc(100vh - 4.625rem) auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#secondary-grid {
+  display: grid;
+  grid-template-areas: "main" "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 1fr auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.navbar {
+  grid-area: nav;
+  background-color: #f8e5d7;
+  color: #000;
+  border-bottom: #000 solid 0.1rem;
+  opacity: 1;
+}
+.navbar .container-fluid .logo {
+  font-style: italic;
+  font-size: 2rem;
+  color: #000;
+}
+.navbar .container-fluid .navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar .container-fluid .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav a {
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0.5rem;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  grid-area: main;
+  background-color: #fbbaa0;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "hero";
+  place-items: center;
+  overflow: hidden;
+}
+header .hero__content {
+  grid-area: hero;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  min-width: 30ch;
+  padding: 1rem;
+}
+header .hero__content h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+header .hero__content p {
+  font-size: 1.75rem;
+}
+header img {
+  grid-area: hero;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featurette {
+  margin: 2rem 0;
+  align-items: center;
+}
+
+#featurette-container {
+  padding: 0;
+}
+
+#featurette-container:first-child {
+  margin-top: 2rem;
+}
+
+#featurette-container:last-child {
+  margin-bottom: 2rem;
+}
+
+.featurette-text {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  background-color: #f8e5d7;
+  border: #000 solid 0.1rem;
+  padding: 1rem 1rem;
+}
+
+.featurette-heading {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.featurette-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+#reviews-main {
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  background-color: #f8e5d7;
+  margin: 0.75rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  border: #000 solid 0.1rem;
+}
+
+footer {
+  grid-area: footer;
+  border-top: #000 solid 0.1rem;
+  background-color: #f8e5d7;
+}
+footer .footer-text {
+  font-size: 1.5rem;
+  color: #000;
+  padding: 0.5rem 0.5rem;
+}
+
+.bd-placeholder-img {
+  margin-top: 1rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-nav a {
+    text-decoration: underline rgba(0, 0, 0, 0);
+    transition: text-decoration-color 400ms;
+  }
+  .navbar-nav a:hover {
+    text-decoration-color: black;
+  }
+
+  .featurette-img {
+    padding-top: 0;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* X-Large devices (large desktops, 1200px and up) */
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+/*# sourceMappingURL=style.css.map */
