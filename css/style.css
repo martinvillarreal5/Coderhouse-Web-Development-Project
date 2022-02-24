@@ -1,28 +1,3 @@
-#main-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#main-contact .contact-container {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  justify-content: center;
-  padding: 3rem;
-  width: fit-content;
-  background-color: #f8e5d7;
-  border: #000 solid 0.1rem;
-  font-weight: 500;
-}
-#main-contact .contact-container .contact-h2 {
-  font-size: 5rem;
-  margin: 0 0 1rem;
-}
-#main-contact .contact-container .contact-h3 {
-  font-size: 2.5rem;
-  margin: 0 0 1rem;
-}
-
 * {
   font-family: "Lato", sans-serif;
 }

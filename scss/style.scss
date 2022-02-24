@@ -1,9 +1,8 @@
 //import:
 //variables:
+@import "variables";
 @import "colors";
 @import "borders";
-//pages:
-@import "pages/contact";
 
 * {
     font-family: "Lato", sans-serif;
@@ -51,7 +50,7 @@ body {
     .container-fluid {
         .logo {
             font-style: italic;
-            font-size: 2rem;
+            font-size: $nav-logo-font;
             color: #000;
         }
         .navbar-toggler {
