@@ -1,0 +1,15 @@
+#reviews-main {
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #reviews-container{
+        .review {
+            @include principal-container($principal_color, $simple-border);
+            margin: .75rem .5rem;
+            padding: .5rem .5rem;
+            text-align: center;
+        }
+    }
+}

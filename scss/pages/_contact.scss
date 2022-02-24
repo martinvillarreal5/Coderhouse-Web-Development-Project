@@ -1,0 +1,18 @@
+#main-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact-container {
+        @include principal-container($principal_color, $simple-border);
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        padding: 3rem;
+        .contact-h2 {
+            font-size: 5rem;
+        }
+        .contact-h3 {
+            font-size: 2.5rem;
+        }
+    }
+}
