@@ -115,23 +115,20 @@ header {
 #featurette-container {
     padding: 0;
     .featurette {
+        @include principal-container($principal_color, $simple-border);
         margin: 2rem 0;
-        align-items: center;
         .featurette-text {
-            @include principal-container($principal_color, $simple-border);
-            display: flex;
-            flex-direction: column;
-            padding: 1rem 1rem;
+            @include flex-col-container;
+            padding: 1rem;
             .featurette-heading {
                 font-size: 3rem;
                 font-weight: 500;
             }
         }
-        .featurette-img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-top: 1rem;
+        .featurette-img-container {
+            @include flex-col-container;
+            justify-content: flex-start;
+            padding: 1rem;
         }
     }
 }

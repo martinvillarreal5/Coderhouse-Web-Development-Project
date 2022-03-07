@@ -33,3 +33,7 @@ $simple-border: #000 solid 0.1rem;
         color: #000;
     }
 }
+@mixin flex-col-container {
+    display: flex;
+    flex-direction: column;
+}

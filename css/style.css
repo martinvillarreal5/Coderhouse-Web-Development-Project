@@ -133,25 +133,24 @@ header img {
   padding: 0;
 }
 #featurette-container .featurette {
-  margin: 2rem 0;
-  align-items: center;
-}
-#featurette-container .featurette .featurette-text {
   background-color: #f8e5d7;
   border: #000 solid 0.1rem;
+  margin: 2rem 0;
+}
+#featurette-container .featurette .featurette-text {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 #featurette-container .featurette .featurette-text .featurette-heading {
   font-size: 3rem;
   font-weight: 500;
 }
-#featurette-container .featurette .featurette-img {
+#featurette-container .featurette .featurette-img-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 1rem;
+  justify-content: flex-start;
+  padding: 1rem;
 }
 
 p {
