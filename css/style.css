@@ -5,7 +5,7 @@
 }
 #main-contact .contact-container {
   background-color: #f8e5d7;
-  border: #000 solid 0.1rem;
+  border: none;
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -27,7 +27,7 @@
 }
 #reviews-main #reviews-container .review {
   background-color: #f8e5d7;
-  border: #000 solid 0.1rem;
+  border: none;
   margin: 0.75rem 0.5rem;
   padding: 0.5rem 0.5rem;
   text-align: center;
@@ -69,7 +69,7 @@ a:hover {
 .navbar {
   grid-area: nav;
   background-color: #f8e5d7;
-  border-bottom: #000 solid 0.1rem;
+  border-bottom: none;
 }
 .navbar .container-fluid .logo {
   font-style: italic;
@@ -134,7 +134,7 @@ header img {
 }
 #featurette-container .featurette {
   background-color: #f8e5d7;
-  border: #000 solid 0.1rem;
+  border: none;
   margin: 2rem 0;
 }
 #featurette-container .featurette .featurette-text {
@@ -159,7 +159,7 @@ p {
 
 footer {
   grid-area: footer;
-  border-top: #000 solid 0.1rem;
+  border-top: none;
   background-color: #f8e5d7;
   font-size: 1.5rem;
   color: #000;
