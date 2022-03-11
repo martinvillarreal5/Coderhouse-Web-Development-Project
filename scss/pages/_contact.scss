@@ -1,18 +1,44 @@
 #main-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .contact-container {
-        @include principal-container($principal_color, $simple-border);
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-        padding: 3rem;
-        .contact-h2 {
-            font-size: 5rem;
-        }
-        .contact-h3 {
-            font-size: 2.5rem;
+
+    #contact-container {
+        padding: 2rem 1rem;
+
+        #contact-form {
+            //background-color: $secondary_color;
         }
     }
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #main-contact {
+        #contact-container {
+            padding: 2rem 4rem;
+        }
+    }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #main-contact {
+        #contact-container {
+            padding: 2rem 8rem;
+        }
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #main-contact {
+        #contact-container {
+            padding: 2rem 16rem;
+        }
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

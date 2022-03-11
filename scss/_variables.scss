@@ -3,8 +3,12 @@ $nav-height: 4.6250rem ;
 $main-height:  calc(100vh - $nav-height);
 //colors
 
-$principal_color: #f8e5d7;
-$secondary_color: #fbbaa0;
+$principal_color: #23362b;
+$secondary_color: #ffffff;
+$special_color: #c6951a;
+$principal_font-color: #ffffff;
+$secondary-font-color: #140606;
+$special-font-color: #f3bc32;
 
 //borders
 //$simple-border: #000 solid 0.1rem;
@@ -15,9 +19,9 @@ $simple-border: none;
 
 //mixins
 
-@mixin principal-container ($principal_color, $simple-border) {
-    background-color: $principal_color;
-    border: $simple-border;
+@mixin principal-container ($color, $border) {
+    background-color: $color;
+    border: $border;
 
 }
 @mixin no-bootstrap-button {
