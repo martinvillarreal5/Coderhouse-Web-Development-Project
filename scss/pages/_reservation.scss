@@ -2,12 +2,12 @@
     padding: 0;
     margin: 0;
 
-    #reservation-header {
+    #reservation__header {
         text-align: center;
         padding: 2rem;
         color: $secondary-font-color;
 
-        h1 {
+        #reservation__heading {
             font-size: 3rem;
             font-weight: bold;
             margin-top: 2rem;
