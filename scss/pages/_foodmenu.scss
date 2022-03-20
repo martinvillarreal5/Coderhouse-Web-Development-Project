@@ -18,6 +18,8 @@
         .foodmenu-category__header{
             background-color: $special_color;
             color: $principal-font-color;
+            padding: 3rem;
+            text-align: center;
             h2{
                 font-size: 2rem;
                 font-weight: bold;
@@ -26,17 +28,29 @@
         .foodmenu__items{
             .foodmenu__item{
                 margin: 0;
+                padding: 1rem;
                 background-color: $principal-color;
                 color: $principal-font-color;
-                h3{
+                border-bottom: .25rem solid $special_color;
+                .item-name{
                     font-size: 1.5rem;
                     font-weight: bold;
                 }
-                p{
+                .item-desc{
                     font-size: 1rem;
                 }
+                .item-price{
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    text-align: right;
+                }
+                &:last-child{
+                    border-bottom: none;
+                }
             }
-
         }
+    }
+    &:last-child{
+        margin-bottom: 3rem;
     }
 }

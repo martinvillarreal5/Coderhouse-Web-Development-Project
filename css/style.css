@@ -318,6 +318,8 @@
 #foodmenu .foodmenu-category .foodmenu-category__header {
   background-color: #c6951a;
   color: #ffffff;
+  padding: 3rem;
+  text-align: center;
 }
 #foodmenu .foodmenu-category .foodmenu-category__header h2 {
   font-size: 2rem;
@@ -325,15 +327,28 @@
 }
 #foodmenu .foodmenu-category .foodmenu__items .foodmenu__item {
   margin: 0;
+  padding: 1rem;
   background-color: #23362b;
   color: #ffffff;
+  border-bottom: 0.25rem solid #c6951a;
 }
-#foodmenu .foodmenu-category .foodmenu__items .foodmenu__item h3 {
+#foodmenu .foodmenu-category .foodmenu__items .foodmenu__item .item-name {
   font-size: 1.5rem;
   font-weight: bold;
 }
-#foodmenu .foodmenu-category .foodmenu__items .foodmenu__item p {
+#foodmenu .foodmenu-category .foodmenu__items .foodmenu__item .item-desc {
   font-size: 1rem;
+}
+#foodmenu .foodmenu-category .foodmenu__items .foodmenu__item .item-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: right;
+}
+#foodmenu .foodmenu-category .foodmenu__items .foodmenu__item:last-child {
+  border-bottom: none;
+}
+#foodmenu:last-child {
+  margin-bottom: 3rem;
 }
 
 * {
@@ -364,7 +379,7 @@ main {
   text-align: center;
 }
 .article-top .article-top__minor-heading {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 }
 .article-top .article-top__main-heading {
   font-size: 3.25rem;
