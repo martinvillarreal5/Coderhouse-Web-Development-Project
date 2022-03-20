@@ -1,22 +1,23 @@
-#about{
+#about-article{
     #featurette-container {
         padding: 0;
         margin: 0;
         max-width: 100%;
         .featurette {
             color: $principal-font-color;
-            background-color: $principal_color;
+            background-color: $principal-color;
             margin: 0;
             .featurette-text {
                 @include flex-col-container;
-                padding: 1rem;
+                padding: 4rem;
                 justify-content: center;
                 text-align: center;
                 .featurette-heading {
                     color: $special-font-color;
                     font-style: italic;
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                     font-weight: 500;
+                    margin-bottom: 3rem
                 }
             }
             .featurette-img-container {

@@ -1,0 +1,32 @@
+.form{
+    padding: 4rem 2rem;
+    .form__field{
+        color: $secondary-font-color;
+        label{
+            font-size: 1.5rem;
+            margin-bottom: .5rem
+        }
+        input{
+            @include box-shadow-focus($special-color, rgba(198, 149, 26, 0.6));
+        }
+        textarea{
+            @include box-shadow-focus($special-color, rgba(198, 149, 26, 0.6));
+        }
+        select{
+            @include box-shadow-focus($special-color, rgba(198, 149, 26, 0.6));
+            //cambiar el color de las opciones?
+        }
+        // ver alguna forma mejor
+    }
+    .form__btn-wrapper{
+        margin-top: 2rem;
+        .form__btn{
+            @include border-button ($special-font-color);
+            @include box-shadow-focus($special-color, rgba(198, 149, 26, 0.6));
+            border-radius: .5rem;
+            padding: .5rem 1.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}

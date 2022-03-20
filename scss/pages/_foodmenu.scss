@@ -1,0 +1,42 @@
+#foodmenu{
+    #foodmenu__header{
+        text-align: center;
+        padding: 2rem;
+        color: $secondary-font-color;
+        h1{
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+        }
+    }
+    .foodmenu-category{
+        .foodmenu-category__header{
+            background-color: $special_color;
+            color: $principal-font-color;
+            h2{
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+        .foodmenu__items{
+            .foodmenu__item{
+                margin: 0;
+                background-color: $principal-color;
+                color: $principal-font-color;
+                h3{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+
+        }
+    }
+}

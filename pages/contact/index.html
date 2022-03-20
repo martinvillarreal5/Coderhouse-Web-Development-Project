@@ -19,51 +19,80 @@
   <title>Luigi's - Contacto</title>
 </head>
 
-<body id="secondary-grid">
+<body>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="logo navbar-brand" href="../../">Luigi's</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerMenu"
+        aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="visually-hidden"></span>
+        <i class="bi bi-list"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarTogglerMenu">
         <div class="navbar-nav">
-          <a class="nav__item" href="../foodmenu/">Carta</a>
-          <a class="nav__item" href="../gallery/">Galería</a>
-          <a class="nav__item" href="#">Contacto</a>
-          <a class="nav__item" href="../reservation/">Reseñas</a>
+          <a href="../foodmenu/">Carta</a>
+          <a href="../reservation/">Reservas</a>
+          <a class="current-page">Contacto</a>
+          <a href="../reviews/">Reseñas</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <main id="main-contact">
-    <article id="contact-container">
-      <form id="contact-form">
-        <div class="mb-3">
-          <label for="contact-form__name-input" class="form-label">Name</label>
-          <input type="name" class="form-control" id="contact-form__name-input">
+  <main>
+    <article id="contact" class="row">
+      <div class="contact__header col-md-6">
+        <h2 class="contact__header-heading">Contacto</h2>
+        <p class="contact__header-text">Escribinos para hacer reservas para eventos, grupos grandes o empresas.</p>
+        <p class="contact__header-text">Tambien puedes contactarnos mediante nuestro telefono: </p>
+        <p class=contact__telephone> 2610000000 </p>
+      </div>
+      <form class="form col-md-6">
+        <div class="form__field mb-3">
+          <label for="form__name-input">Nombre y Apellido</label>
+          <input type="name" class="form-control" id="form__name-input" required>
         </div>
-        <div class="mb-3">
-          <label for="contact-form__mail-imput" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="contact-form__mail-imput" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div class="form__field mb-3">
+          <label for="form__mail-imput">Correo</label>
+          <input type="email" class="form-control" id="form__mail-imput" required>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Your message here</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        <div class="form__field mb-3">
+          <label for="form__subject-imput">Asunto</label>
+          <input type="text" class="form-control" id="form__subject-imput" required>
         </div>
-        <div class="d-flex justify-content-center">
-          <button id="" type="submit" class="btn btn-primary">Send</button>
+        <div class="form__field mb-3">
+          <label for="exampleFormControlTextarea1">Tu mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+        </div>
+        <div class="form-text">No compartiremos tu información con nadie.</div>
+        <div class="form__btn-wrapper d-flex justify-content-center">
+          <button id="" type="submit" class="form__btn btn">Enviar</button>
         </div>
       </form>
     </article>
   </main>
   <footer>
-    <div class="footer-text">
-      <span>©2022 - Martín Villarreal</span>
-    </div>
+    <article class="row footer-content">
+      <div class="footer__text col-sm-auto">
+        <span>©2022 Todos los derechos reservados</span>
+      </div>
+      <div class="footer__socials col-sm-auto">
+        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
+      </div>
+    </article>
+    <hr class="footer__separator">
+    <article class="row personal">
+      <div class="personal__text col-sm-auto">
+        <span>Diseño y Desarrollo por Martín Villarreal</span>
+      </div>
+      <div class="personal__socials col-sm-auto">
+        <a href="https://www.linkedin.com/in/-martin-villarreal"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/martinvillarreal5"><i class="bi bi-github"></i></a>
+      </div>
+    </article>
   </footer>
   <!-- Bootstrap JS CDN (no poper)-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"

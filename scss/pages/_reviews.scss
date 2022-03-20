@@ -1,0 +1,45 @@
+#reviews{
+    #reviews__header{
+        text-align: center;
+        color: $secondary-font-color;
+        padding: 2rem;
+        #reviews__heading{
+            font-size: 3.25rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    #reviews-container{
+        padding: 1rem;
+        margin: 0;
+        .reviews-colum{
+            padding: 1rem;
+            .review{
+                padding: 2rem;
+                //margin-bottom: 1.25rem;
+                background-color: $principal-color;
+                color: $principal-font-color;
+                font-size: 1.25rem;
+                text-align: center;
+                .review__image{
+                    padding: 1rem;
+                    width: 10rem;
+                    border-radius: 50%;
+                }
+                .review__rating{
+                    padding-bottom: 0.25rem;
+                    .rating-star{
+                        color: $special-font-color;
+                    }
+                }
+                .review__title{
+                    padding-bottom: .5rem;
+                    font-size: 2rem ;
+                }
+            }
+            
+        }
+    }
+}

@@ -14,25 +14,27 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="keywords" content="Desarrollo, Web, Frontend, Restaurante, Italiano">
-  <meta name="description" content="Pagina principal de mi Proyecto de Desarrollo Web Frontend sobre un Restaurante Italiano Imaginario. Desarrollado con html, scss y bootstrap">
+  <meta name="description"
+    content="Pagina principal de mi Proyecto de Desarrollo Web Frontend sobre un Restaurante Italiano Imaginario. Desarrollado con html, scss y bootstrap">
   <title>Luigi's - Restaurante Italiano</title>
 </head>
 
-<body id="main-grid">
-
+<body>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
     <div class="container-fluid">
-      <a class="logo navbar-brand" href="#">Luigi's</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="logo navbar-brand">Luigi's</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerMenu"
+        aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="visually-hidden"></span>
+        <!-- agregar texto descriptivo de accebilidad y cambiar nombre de clases-->
         <i class="bi bi-list"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarTogglerMenu">
         <div class="navbar-nav">
-          <a class="nav__item" href="pages/foodmenu/">Carta</a>
-          <a class="nav__item" href="pages/gallery/">Galería</a>
-          <a class="nav__item" href="pages/contact/">Contacto</a>
-          <a class="nav__item" href="pages/reservation/">Reseñas</a>
+          <a href="pages/foodmenu/">Carta</a>
+          <a href="pages/reservation/">Reservas</a>
+          <a href="pages/contact/">Contacto</a>
+          <a href="pages/reviews/">Reseñas</a>
         </div>
       </div>
     </div>
@@ -40,27 +42,29 @@
 
   <header id="hero">
     <div class="hero__content">
-      <h1>Lorem Ipsum</h1>
+      <h1>Lugi's</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
-    <img src="images/hero-pasta1-pexels-klaus-nielsen.jpg" class="" alt="Hero">
+    <img src="images/hero-pasta1-pexels-klaus-nielsen.jpg" alt="Hero image">
   </header>
 
   <main>
-    <article id="about">
-      <section class="section-header">
-        <p class="section-header__minor-heading">Sobre</p>
-        <h2 class="section-header__main-heading">Nosotros</h2>
-      </section>
-      <div class="container" id="featurette-container">
+    <article id="about-article">
+      <div class="article-top">
+        <p class="article-top__minor-heading">Sobre</p>
+        <h2 class="article-top__main-heading">Nosotros</h2>
+      </div>
+
+      <div id="featurette-container" class="container">
         <div class="row featurette">
           <div class="col-md-6 featurette-text">
-            <h3 class="featurette-heading">First featurette heading.</h3>
+            <h3 class="featurette-heading">First heading.</h3>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore culpa modi cupiditate
               reprehenderit consectetur, autem, provident recusandae inventore quaerat maiores doloribus?</p>
           </div>
           <div class="col-md-6 featurette-img-container">
-            <img class="img-fluid featurette-img" src="images/pexels-nataliya-vaitkevich-5792323.jpg" alt="here goes an image">
+            <img class="img-fluid featurette-img" src="images/pexels-nataliya-vaitkevich-5792323.jpg"
+              alt="here goes an image of a pizza">
           </div>
         </div>
         <div class="row featurette">
@@ -71,18 +75,53 @@
               doloremque cupiditate a assumenda?.</p>
           </div>
           <div class="col-md-6 order-md-1 featurette-img-container">
-            <img class="img-fluid featurette-img" src="images/pexels-life-of-pix-67468.jpg" alt="here goes an image">
+            <img class="img-fluid featurette-img" src="images/pexels-life-of-pix-67468.jpg"
+              alt="here goes an image of a restaurant">
           </div>
         </div>
       </div>
     </article>
-    
+
+    <article class="go-to">
+      <div class="article-top">
+        <p class="article-top__minor-heading">Lorem Ipsum</p>
+      </div>
+      <div class="go-to__content container-lg">
+        <div class="go-to__text">
+          <h3 class="go-to__heading">
+            Nuestros Platos
+          </h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum culpa reprehenderit nihil vitae deleniti pariatur quia quibusdam ipsa non, amet quidem quas, quaerat aliquid.
+          </p>
+        </div>
+        <button type="button" class="go-to__button"><a href="pages/foodmenu/">La Carta</a></button>
+      </div>
+    </article>
   </main>
 
   <footer>
-    <div class="footer-text">
-      <span>©2022 - Martín Villarreal</span>
-    </div>
+    <article class="row footer-content">
+      <div class="footer__text col-sm-auto">
+        <span>©2022 Todos los derechos reservados</span>
+      </div>
+      <div class="footer__socials col-sm-auto">
+        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
+      </div>
+    </article>
+    <hr class="footer__separator">
+    <article class="row personal">
+      <div class="personal__text col-sm-auto">
+        <span>Diseño y Desarrollo por Martín Villarreal</span>
+      </div>
+      <div class="personal__socials col-sm-auto">
+        <a href="https://www.linkedin.com/in/-martin-villarreal"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/martinvillarreal5"><i class="bi bi-github"></i></a>
+      </div>
+    </article>
   </footer>
 
   <!-- Bootstrap JS CDN (no poper)-->

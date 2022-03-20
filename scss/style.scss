@@ -1,10 +1,20 @@
 //import:
 //variables:
 @import "variables";
-@import "featurettes";
+
+//components:
+
+@import "navbar";
+@import "hero";
+@import "about";
+@import "go-to";
+@import "form";
 
 //pages:
 @import "pages/contact";
+@import "pages/reservation";
+@import "pages/reviews";
+@import "pages/foodmenu";
 
 * {
     font-family: "Lato", sans-serif;
@@ -14,153 +24,84 @@ body {
     overflow-x: hidden;
     width: 100%;
     min-height: 100vh;
-
     padding-top: $nav-height;
-}
-
-#main-grid {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer"
-    ;
-    grid-template-columns: auto;
-    grid-template-rows: $main-height auto auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-#secondary-grid {
-    @extend #main-grid;
-    grid-template-areas:
-        "main"
-        "footer"
-    ;
-    grid-template-rows: 1fr auto;
-}
-
-a {
-    @include basic-link;
 }
 
 p {
     margin: 0;
 }
 
-
-.navbar {
-    grid-area: nav;
-    background-color: $principal_color;
-
-    .container-fluid {
-        padding-right: 2rem;
-        padding-left: 2rem;
-
-        .logo {
-            font-style: italic;
-            font-size: 2rem;
-            color: $special-font-color;
-
-        }
-
-        .navbar-toggler {
-            @include no-bootstrap-button;
-            padding: .25rem;
-
-            i {
-                font-size: 2rem;
-                color: $principal-font-color;
-            }
-        }
-
-        .navbar-collapse {
-            .navbar-nav {
-                a {
-                    font-size: 1.25rem;
-                    ;
-                    text-align: center;
-                    display: block;
-                    padding: .5rem .5rem;
-                    color: $principal-font-color;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
 main {
-    grid-area: main;
-    background-color: #FF985C;
+    background-color: $secondary-color;
+    min-height: $main-height;
 
 }
 
-header {
-    grid-area: header;
-    display: grid;
-    grid-template-areas: "hero";
-    place-items: center;
-    overflow: hidden;
-
-    .hero__content {
-        grid-area: hero;
-        z-index: 1;
-        text-align: center;
-        min-width: 30ch;
-        padding: 1rem;
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 500;
-            margin: 0 0 1rem;
-            color: $special-font-color;
-        }
-
-        p {
-            font-size: 1.75rem;
-            color: #ffffff;
-        }
-    }
-
-    img {
-        filter: brightness(60%);
-        grid-area: hero;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.section-header {
+.article-top {
     background-color: $special_color;
-    color: $principal_font-color;
-    font-size: 3rem;
-    padding: 4rem;
+    color: $principal-font-color;
+    padding: 3.5rem;
     margin: 0;
+    text-align: center;
 
-    .section-header__minor-heading {}
+    .article-top__minor-heading {
+        font-size: 2.75rem;
+    }
 
-    .section-header__main-heading {
-        font-size: 3.5rem;
+    .article-top__main-heading {
+        font-size: 3.25rem;
+        margin: 0;
         font-weight: bold;
     }
 }
 
 footer {
-    grid-area: footer;
-    background-color: $principal_color;
-    font-size: 1.5rem;
+    background-color: $principal-color;
     color: $principal-font-color;
+    padding: 0 2rem;
+    font-size: 1rem;
 
-    .footer-text {
-        padding: .5rem .5rem;
+    .footer-content {
+        display: flex;
+        align-items: center;
+        padding: .5rem 0;
+
+        .footer__text {
+            margin: 0;
+        }
+
+        .footer__socials {
+            padding-left: .5rem;
+
+            a {
+                @include basic-link($special-font-color);
+                font-size: 1.25rem;
+                padding: 0 .5rem;
+            }
+        }
     }
 
+    .footer__separator {
+        margin: 0;
+    }
+
+    .personal {
+        display: flex;
+        align-items: center;
+        padding: .5rem 0;
+
+        .personal__text {
+            margin: 0;
+        }
+
+        .personal__socials {
+            a {
+                @include basic-link($special-font-color);
+                font-size: 1.25rem;
+                padding-right: 1rem;
+            }
+        }
+    }
 }
 
 .bd-placeholder-img {

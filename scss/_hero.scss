@@ -1,0 +1,34 @@
+#hero {
+    height: $hero-height;
+    display: grid;
+    grid-template-areas: "hero";
+    place-items: center;
+    overflow: hidden;
+
+    .hero__content {
+        grid-area: hero;
+        z-index: 1;
+        text-align: center;
+        min-width: 30ch;
+        padding: 1rem;
+        color: $principal-font-color;
+        h1 {
+            font-size: 3.5rem;
+            font-style: italic;
+            font-weight: bold;
+            margin: 0 0 1rem;
+        }
+
+        p {
+            font-size: 1.75rem;
+        }
+    }
+
+    img {
+        filter: brightness(50%);
+        grid-area: hero;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

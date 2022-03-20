@@ -1,20 +1,20 @@
-#contact {
+#reservation {
     padding: 0;
     margin: 0;
 
-    .contact__header {
+    #reservation-header {
         text-align: center;
         padding: 2rem;
         color: $secondary-font-color;
 
-        .contact__header-heading {
+        h1 {
             font-size: 3rem;
             font-weight: bold;
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
 
-        .contact__header-text {
+        p {
             font-size: 1.25rem;
             margin-bottom: 3rem;
         }

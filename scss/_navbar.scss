@@ -1,0 +1,62 @@
+
+
+.navbar {
+    grid-area: nav;
+    background-color: $principal-color;
+
+    .container-fluid {
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        .logo {
+            font-style: italic;
+            font-size: 2rem;
+            color: $special-font-color;
+
+        }
+
+        .navbar-toggler {
+            @include remove-bootstrap-boxshadow;
+            border: none;
+            padding: 0;
+
+            i {
+                font-size: 2rem;
+                color: $principal-font-color;
+            }
+        }
+
+        .navbar-collapse {
+            justify-content: right;
+            .navbar-nav {
+                a {
+                    @include basic-link($special-font-color);
+                    font-size: 1.25rem;
+                    text-align: center;
+                    display: block;
+                    padding: .5rem .5rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .current-page{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar-nav {
+        a {
+            text-decoration: underline rgba(0, 0, 0, 0);
+            transition: text-decoration-color 400ms;
+
+            &:hover {
+                text-decoration-color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
