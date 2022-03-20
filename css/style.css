@@ -26,33 +26,25 @@
   justify-content: right;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav a {
-  color: #c6951a;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.25rem;
   text-align: center;
   display: block;
   padding: 0.5rem 0.5rem;
+  transition: color 400ms;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav a:hover {
+  color: #ffffff;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav a:hover {
   color: #c6951a;
 }
-.navbar .container-fluid .navbar-collapse .navbar-nav a:hover {
-  text-decoration: underline;
-}
 .navbar .container-fluid .navbar-collapse .navbar-nav .current-page {
-  text-decoration: underline;
+  color: #c6951a;
 }
 
 /*  Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .navbar-nav a {
-    text-decoration: underline rgba(0, 0, 0, 0);
-    transition: text-decoration-color 400ms;
-  }
-  .navbar-nav a:hover {
-    text-decoration-color: black;
-  }
-}
 #hero {
   height: calc(100vh - 4.625rem);
   display: grid;
@@ -98,7 +90,7 @@
 #about-article #featurette-container .featurette .featurette-text {
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding-top: 3rem;
   justify-content: center;
   text-align: center;
 }
@@ -107,7 +99,10 @@
   font-style: italic;
   font-size: 3.5rem;
   font-weight: 500;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
+}
+#about-article #featurette-container .featurette .featurette-text .lead {
+  padding: 3rem;
 }
 #about-article #featurette-container .featurette .featurette-img-container {
   display: flex;
@@ -148,22 +143,17 @@
   background-color: transparent;
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
-  border: #c6951a solid 0.25rem;
+  color: #c6951a;
+  text-decoration: none;
   background-color: transparent;
-  border-radius: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 .go-to .go-to__content .go-to__button:focus {
   border-color: #c6951a;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(198, 149, 26, 0.6);
 }
-.go-to .go-to__content .go-to__button a {
-  color: #c6951a;
-  text-decoration: none;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-.go-to .go-to__content .go-to__button a:hover {
+.go-to .go-to__content .go-to__button:hover {
   color: #c6951a;
 }
 
