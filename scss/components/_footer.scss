@@ -1,0 +1,48 @@
+footer {
+    background-color: $principal-color;
+    color: $principal-font-color;
+    padding: 0 2rem;
+    font-size: 1rem;
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        padding: .5rem 0;
+
+        .footer__text {
+            margin: 0;
+        }
+
+        .footer__socials {
+            padding-left: .5rem;
+
+            a {
+                @include basic-link($special-font-color);
+                font-size: 1.25rem;
+                padding: 0 .5rem;
+            }
+        }
+    }
+
+    .footer__separator {
+        margin: 0;
+    }
+
+    .personal {
+        display: flex;
+        align-items: center;
+        padding: .5rem 0;
+
+        .personal__text {
+            margin: 0;
+        }
+
+        .personal__socials {
+            a {
+                @include basic-link($special-font-color);
+                font-size: 1.25rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+}

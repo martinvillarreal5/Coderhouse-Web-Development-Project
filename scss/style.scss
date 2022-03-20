@@ -1,20 +1,27 @@
 //import:
 //variables:
+
 @import "variables";
+
+//mixins:
+
+@import "mixins";
 
 //components:
 
-@import "navbar";
-@import "hero";
-@import "about";
-@import "go-to";
-@import "form";
+@import "components/navbar";
+@import "components/hero";
+@import "components/go-to";
+@import "components/footer";
+@import "components/form";
 
 //pages:
 @import "pages/contact";
 @import "pages/reservation";
 @import "pages/reviews";
 @import "pages/foodmenu";
+@import "pages/about";
+
 
 * {
     font-family: "Lato", sans-serif;
@@ -55,63 +62,7 @@ main {
     }
 }
 
-footer {
-    background-color: $principal-color;
-    color: $principal-font-color;
-    padding: 0 2rem;
-    font-size: 1rem;
-
-    .footer-content {
-        display: flex;
-        align-items: center;
-        padding: .5rem 0;
-
-        .footer__text {
-            margin: 0;
-        }
-
-        .footer__socials {
-            padding-left: .5rem;
-
-            a {
-                @include basic-link($special-font-color);
-                font-size: 1.25rem;
-                padding: 0 .5rem;
-            }
-        }
-    }
-
-    .footer__separator {
-        margin: 0;
-    }
-
-    .personal {
-        display: flex;
-        align-items: center;
-        padding: .5rem 0;
-
-        .personal__text {
-            margin: 0;
-        }
-
-        .personal__socials {
-            a {
-                @include basic-link($special-font-color);
-                font-size: 1.25rem;
-                padding-right: 1rem;
-            }
-        }
-    }
-}
-
-.bd-placeholder-img {
-    margin-top: 1rem;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/*  Medium devices (tablets, 768px and up) */
+//  Medium devices (tablets, 768px and up) 
 @media (min-width: 768px) {
     .navbar-nav a {
         text-decoration: underline rgba(0, 0, 0, 0);
@@ -122,13 +73,3 @@ footer {
         }
     }
 }
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
