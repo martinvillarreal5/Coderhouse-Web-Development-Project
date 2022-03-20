@@ -315,6 +315,9 @@
   font-size: 1.25rem;
   margin-bottom: 3rem;
 }
+#foodmenu .foodmenu-category {
+  margin-bottom: 3rem;
+}
 #foodmenu .foodmenu-category .foodmenu-category__header {
   background-color: #c6951a;
   color: #ffffff;
@@ -346,9 +349,6 @@
 }
 #foodmenu .foodmenu-category .foodmenu__items .foodmenu__item:last-child {
   border-bottom: none;
-}
-#foodmenu:last-child {
-  margin-bottom: 3rem;
 }
 
 * {

@@ -15,6 +15,7 @@
         }
     }
     .foodmenu-category{
+        margin-bottom: 3rem;
         .foodmenu-category__header{
             background-color: $special_color;
             color: $principal-font-color;
@@ -49,8 +50,5 @@
                 }
             }
         }
-    }
-    &:last-child{
-        margin-bottom: 3rem;
     }
 }
